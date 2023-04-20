@@ -1,6 +1,6 @@
 import React from 'react'
-import { Navbar, Project, Skill } from './components'
 import { Header, Footer, Projects, Skills } from './containers'
+import { Navbar, Project } from './components'
 import './app.css'
 import './index.css'
 
@@ -11,7 +11,7 @@ const App = () => {
             <Navbar/>
             <Header/>
         </div>
-        <Skills/>
+        <Skills />
         <Projects/>
         <Footer/>
 
