@@ -1,5 +1,5 @@
 import React from 'react'
-import './skills.css';
+import './tools.css';
 import { Skill } from '../../components';
 import JS from '../../assets/javascript.png'
 import Kotlin from '../../assets/kotlin.png'
@@ -12,13 +12,13 @@ import Vue from '../../assets/vue.png'
 
 
 
-const Skills = () => {
+const Tools = () => {
   return (
-    <div className='portfolio__skills section__margin' id='skl'>
-      <div className='portfolio__skills-header'>
+    <div className='portfolio__tools section__margin' id='tool'>
+      <div className='portfolio__tools-header'>
         <h2 className='gradient__text'>Technologies</h2>
       </div>
-      <div className='portfolio__skills-container'>
+      <div className='portfolio__tools-container'>
         <Skill image={JS} text='JavaScript'/>
         <Skill image={Kotlin} text='Kotlin'/>
         <Skill image={Css} text='CSS'/>
@@ -34,4 +34,4 @@ const Skills = () => {
   )
 }
 
-export default Skills
+export default Tools

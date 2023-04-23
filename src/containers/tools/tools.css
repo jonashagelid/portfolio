@@ -1,0 +1,29 @@
+.portfolio__tools {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    font-family: var(--font-family);
+}
+
+.portfolio__tools-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.portfolio__tools-container img {
+    width: 70px;
+    height: 70px;
+}
+
+@media screen and (max-width: 550px) {
+    .portfolio__tools{
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .portfolio__tools-container img {
+        width: 40px;
+        height: 40px;
+    }
+}

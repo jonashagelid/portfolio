@@ -6,7 +6,8 @@ import logo from '../../assets/javascript.png'
 const Menu = () => (
   <>
     <p><a href="#home">Home</a></p>
-    <p><a href="#skills">Skills</a></p>
+    <p><a href="#skills">Technologies</a></p>
+    <p><a href="#skills">Tools</a></p>
     <p><a href="#projects">Projects</a></p>
     <p><a href="#github">Github</a></p>
   </>
