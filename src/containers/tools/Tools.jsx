@@ -1,34 +1,32 @@
 import React from 'react'
 import './tools.css';
 import { Skill } from '../../components';
-import JS from '../../assets/javascript.png'
-import Kotlin from '../../assets/kotlin.png'
-import Css from '../../assets/css.png'
-import Html from '../../assets/html.png'
-import Node from '../../assets/node.png'
-import react from '../../assets/react.png'
-import TS from '../../assets/typescript.png'
-import Vue from '../../assets/vue.png'
+import Intellij from '../../assets/intellij.png'
+import Android from '../../assets/android.png'
+import VSC from '../../assets/vscode.png'
+import Xcode from '../../assets/xcode.png'
+import Figma from '../../assets/figma.png'
+import Github from '../../assets/github.png'
+import Gitlab from '../../assets/gitlab.png'
+import Postman from '../../assets/postman.png'
 
 
 
 const Tools = () => {
   return (
-    <div className='portfolio__tools section__margin' id='tool'>
+    <div className='portfolio__tools section__margin' id='tools'>
       <div className='portfolio__tools-header'>
-        <h2 className='gradient__text'>Technologies</h2>
+        <h2 className='gradient__text'>Tools</h2>
       </div>
       <div className='portfolio__tools-container'>
-        <Skill image={JS} text='JavaScript'/>
-        <Skill image={Kotlin} text='Kotlin'/>
-        <Skill image={Css} text='CSS'/>
-        <Skill image={Html} text='HTML'/>
-        <Skill image={Node} text='Node.js'/>
-        <Skill image={react} text='React'/>
-        <Skill image={TS} text='TypeScript'/>
-        <Skill image={Vue} text='Vue'/>
-        <Skill image={Vue} text='Swift'/>
-        <Skill image={Vue} text='Ionic'/>
+        <Skill image={Intellij} text='IntelliJ'/>
+        <Skill image={Android} text='Android Studio'/>
+        <Skill image={VSC} text='Visual Studio Code'/>
+        <Skill image={Xcode} text='XCode'/>
+        <Skill image={Figma} text='Figma'/>
+        <Skill image={Github} text='Github'/>
+        <Skill image={Gitlab} text='GitLab'/>
+        <Skill image={Postman} text='Postman'/>
       </div>
     </div>
   )

@@ -7,9 +7,9 @@ const Menu = () => (
   <>
     <p><a href="#home">Home</a></p>
     <p><a href="#skills">Technologies</a></p>
-    <p><a href="#skills">Tools</a></p>
+    <p><a href="#tools">Tools</a></p>
     <p><a href="#projects">Projects</a></p>
-    <p><a href="#github">Github</a></p>
+    <p><a href="https://github.com/jonashagelid" target="_blank" rel="noreferrer">Github</a></p>
   </>
 )
 

@@ -5,7 +5,10 @@
     z-index: 100;
     background: var(--color-blog);
 
+    top: -1rem;
     padding: 2rem 6rem;
+    position: fixed;
+    width: 100%;
 }
 
 .portfolio__navbar-links {

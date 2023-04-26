@@ -10,7 +10,7 @@
 .portfolio__project-container__project-text{
     font-family: var(--font-family);
     color: var(--color-text);
-    max-width: 100px;
+    max-width: 200px;
 
 }
 

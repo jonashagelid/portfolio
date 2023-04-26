@@ -1,7 +1,9 @@
 .portfolio__header {
     display: flex;
     flex-direction: row;
-    margin: 1rem;
+    margin: 2rem;
+    margin-top: 5rem;
+    
 }
 
 .portfolio__header-content {
@@ -11,6 +13,7 @@
     justify-content: center;
     margin-right: 5rem;
     align-items: flex-start;
+    
 }
 
 .portfolio__header-content h1 {

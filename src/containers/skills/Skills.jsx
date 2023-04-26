@@ -14,7 +14,7 @@ import Vue from '../../assets/vue.png'
 
 const Skills = () => {
   return (
-    <div className='portfolio__skills section__margin' id='skl'>
+    <div className='portfolio__skills section__margin' id='skills'>
       <div className='portfolio__skills-header'>
         <h2 className='gradient__text'>Technologies</h2>
       </div>
