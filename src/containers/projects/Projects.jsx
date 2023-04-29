@@ -16,7 +16,7 @@ const Projects = () => {
       </div>
       <div className='portfolio__projects-container'>
         <a href="https://thehumanaspect.com/" target='_blank' rel="noreferrer"> 
-          <Project image={Tha} text='The Human Aspect' description='Bachelors project for The Human Aspect, a mental health foundation. Written in TypeScript with Next.js, Sass, Nuxt.js.'/>
+          <Project image={Tha} text='The Human Aspect' description='Bachelor project for The Human Aspect, a mental health foundation. Written in TypeScript with Next.js, Sass, Nuxt.js.'/>
         </a>
         <a href="https://github.com/jonashagelid/TDS200_h22_1057" target='_blank' rel="noreferrer">
           <Project image={Retro} text='Retro Game Marketplace' description='Exam project for cross platform development. Written with Vue and Ionic and utilizing database from Directus.'/>
