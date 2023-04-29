@@ -9,8 +9,8 @@ const Footer = () => {
           Contact:
         </h1>
         <p>jonas.hagelid@gmail.com</p>
-        <p><a href="https://github.com/jonashagelid">Linkedin</a></p>
-        <p><a href="https://github.com/jonashagelid">GitHub</a></p>
+        <p><a href="https://www.linkedin.com/in/jonas-hagelid-817b72146/" target='_blank' rel="noreferrer">Linkedin</a></p>
+        <p><a href="https://github.com/jonashagelid" target='_blank' rel="noreferrer">GitHub</a></p>
       </div>
     </div>
   )
