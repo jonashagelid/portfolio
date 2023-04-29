@@ -11,6 +11,7 @@ import TS from '../../assets/typescript.png'
 import Vue from '../../assets/vue.png'
 import Swift from '../../assets/swift.png'
 import Ionic from '../../assets/inoic.png'
+import Next from'../../assets/nextjs.png'
 
 
 
@@ -26,6 +27,7 @@ const Skills = () => {
         <Skill image={Css} text='CSS'/>
         <Skill image={Html} text='HTML'/>
         <Skill image={Node} text='Node.js'/>
+        <Skill image={Next} text='Next.js'/>
         <Skill image={react} text='React'/>
         <Skill image={TS} text='TypeScript'/>
         <Skill image={Vue} text='Vue'/>
