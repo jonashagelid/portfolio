@@ -9,6 +9,8 @@ import Node from '../../assets/node.png'
 import react from '../../assets/react.png'
 import TS from '../../assets/typescript.png'
 import Vue from '../../assets/vue.png'
+import Swift from '../../assets/swift.png'
+import Ionic from '../../assets/inoic.png'
 
 
 
@@ -27,8 +29,8 @@ const Skills = () => {
         <Skill image={react} text='React'/>
         <Skill image={TS} text='TypeScript'/>
         <Skill image={Vue} text='Vue'/>
-        <Skill image={Vue} text='Swift'/>
-        <Skill image={Vue} text='Ionic'/>
+        <Skill image={Swift} text='Swift'/>
+        <Skill image={Ionic} text='Ionic'/>
       </div>
     </div>
   )

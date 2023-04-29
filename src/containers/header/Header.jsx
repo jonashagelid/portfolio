@@ -5,11 +5,13 @@ const Header = () => {
   return (
     <div className='portfolio__header section__padding' id='home'>
       <div className='portfolio__header-content'>
-        <h3>Lorem ipsum dolor sit amet.</h3>
         <h1 className='gradient__text'>
-          Lorem ipsum dolor sit amet.
+          Hi, I'm Jonas
         </h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis laudantium at incidunt et eos dicta velit consequuntur vel similique voluptatibus, dolorem dolor quibusdam soluta ut beatae sint non adipisci nihil.</p>
+        <p>
+          I'm a Front-end and mobile development student in the last year of my bachelor at Høyskolen Kristiania. <br/><br/>
+          During my studies I have worked as an assistant teacher in the courses Creative Web Project, Object Oriented Programming,<br/> Information security, and Introduction to Programming, where I have assisted students in workshops, graded midterm projects,<br/> and conducted repetition lectures.
+        </p>
       </div>
     </div>
   )

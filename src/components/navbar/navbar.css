@@ -18,6 +18,10 @@
     align-items: flex-end;
 }
 
+.portfolio__navbar-contact{
+    padding-left: 5rem;
+}
+
 .portfolio__navbar-links_logo {
     margin-right: 1rem;
 }
