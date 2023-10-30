@@ -12,6 +12,19 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14' # or whichever version you prefer
+
+    - name: Cache node_modules
+      uses: actions/cache@v2
+      with:
+        path: node_modules
+        key: ${{ runner.OS }}-build-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.OS }}-build-
 
     - name: Install dependencies
       run: npm install
@@ -32,6 +45,6 @@ jobs:
 
     - name: Deploy to Hostinger
       run: |
-        rsync -av --delete ./build/ u647644246@89.116.53.61:path/to/public_html/
+        rsync -av --delete ./build/ u647644246@89.116.53.61:/path/to/public_html/
       env:
         DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
