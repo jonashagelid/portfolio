@@ -16,7 +16,7 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '14' # or whichever version you prefer
+        node-version: '14' 
 
     - name: Cache node_modules
       uses: actions/cache@v2
@@ -27,7 +27,7 @@ jobs:
           ${{ runner.OS }}-build-
 
     - name: Install dependencies
-      run: npm install
+      run: npm ci
 
     - name: Run tests
       run: npm test -- --passWithNoTests
@@ -47,11 +47,13 @@ jobs:
         eval $(ssh-agent -s)
         ssh-add deploy_key
 
+    - name: Add Hostinger to SSH known hosts
+      run: |
+        ssh-keyscan 89.116.53.61 >> ~/.ssh/known_hosts
+
     - name: Build
       run: npm run build
 
     - name: Deploy to Hostinger
       run: |
         rsync -av --delete ./build/ u647644246@89.116.53.61:/path/to/public_html/
-      env:
-        DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
