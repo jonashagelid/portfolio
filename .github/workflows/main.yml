@@ -47,9 +47,6 @@ jobs:
         eval $(ssh-agent -s)
         ssh-add deploy_key
 
-    - name: Add Hostinger to SSH known hosts
-      run: |
-        ssh-keyscan 89.116.53.61 >> ~/.ssh/known_hosts
 
     - name: Build
       run: npm run build
