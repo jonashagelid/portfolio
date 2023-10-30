@@ -40,6 +40,13 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
+    - name: Setup SSH key
+      run: |
+        echo "${{ secrets.DEPLOY_KEY }}" > deploy_key
+        chmod 600 deploy_key
+        eval $(ssh-agent -s)
+        ssh-add deploy_key
+
     - name: Build
       run: npm run build
 
