@@ -28,7 +28,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Build
-      run: npm run build
+      run: npm run build --prefix client
 
     - name: Deploy to Hostinger
       run: |
