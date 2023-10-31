@@ -1,0 +1,17 @@
+.portfolio__project-container__project {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+
+}
+
+
+.portfolio__project-container__project-text{
+    font-family: var(--font-family);
+    color: var(--color-text);
+    max-width: 350px;
+
+}
+
+
