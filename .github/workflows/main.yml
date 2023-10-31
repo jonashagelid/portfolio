@@ -1,37 +1,29 @@
-name: CI/CD Pipeline
+name: Generate a build and push to another branch
 
 on:
   push:
     branches:
-      - main 
+      - main
 
 jobs:
-  build-and-test:
+  build:
     runs-on: ubuntu-latest
-
+    name: Build and Push
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: git-checkout
+        uses: actions/checkout@v2
 
-    - name: Install dependencies
-      run: npm install
+      - name: Install all dependencies
+        run: npm install
 
-    - name: Run tests
-      run: npm test -- --passWithNoTests
+      - name: Build
+        run: npm run build 
 
-  deploy:
-    needs: build-and-test
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-
-    - name: Build
-      run: npm run build --prefix client
-
-    - name: Deploy to Hostinger
-      run: |
-        rsync -av --delete ./build/ u647644246@89.116.53.61:path/to/public_html/
-      env:
-        DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+      - name: Push
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: build 
+          FOLDER: build 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+          MESSAGE: "Build: ({sha}) {msg}"
